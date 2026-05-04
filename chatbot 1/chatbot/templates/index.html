@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEXUS-7 Voice Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>NEXUS-7 Voice Interface</h1>
+    <div id="chat-window"></div>
+    
+    <div id="input-container">
+        <!-- Text input mode -->
+        <div id="text-input-mode" class="input-mode">
+            <input type="text" id="text-input" placeholder="Type your message here..." />
+            <button id="send-btn">Send</button>
+        </div>
+        
+        <!-- Mic input mode -->
+        <div id="mic-input-mode" class="input-mode" style="display: none;">
+            <button id="mic-btn">🎤</button>
+        </div>
+        
+        <!-- Mode toggle button -->
+        <button id="mode-toggle-btn" title="Switch input mode">
+            ⌨️
+        </button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
