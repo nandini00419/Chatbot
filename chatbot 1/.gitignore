@@ -1,9 +1,0 @@
-**/rl-env/
-*.dll
-*.lib
-*.exe
-*.pyd
-*.pt
-translation/dataset/english_italian.csv
-__pycache__/
-*.pyc
